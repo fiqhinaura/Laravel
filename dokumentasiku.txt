@@ -1,0 +1,41 @@
+laravel
+framework membuat aplikasi web berbahasa php
+
+kelebihan
+efisien karena penulisan kode sudah jauh lebih singkat
+dokumentasi dan komunitas nya luas
+membuat objek lebih mudah karena make oop
+
+php artisan make:view nama-view
+
+ctrl+p buat cari file
+
+controller : class, method, properties
+
+array ada berapa jenis?
+index 123
+asosiatif nama
+multi dimension
+
+migrate create table : php artisan make:migration create_namatabel
+trs bikin tabelnya di file migrtaion setelah itu baru php artisan migrate
+
+SELASA
+buat tabel
+1. MODEL TRS GENERATE MIGRATION
+2. MIGRATION DI SESUAIKAN DAN MIGRATE
+
+buat tampilan baru
+1. controller
+2. view / route nya bebas
+
+paradigma yang kita gunakan dalam laravel
+procedural
+project oriented (laravel)
+
+oop
+namespace : untuk mengelompokkan, apakah itu model atau controller
+class : 
+query builder / orm
+=> proses instansiasi object
+
