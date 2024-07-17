@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\KelasController;
+use App\Http\Controllers\PenerimaanController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\UnitKerjaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +21,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('kelas', KelasController::class);
-Route::resource('siswa', SiswaController::class);
+Route::resource('unitkerja', UnitKerjaController::class);
+Route::resource('penerimaan', PenerimaanController::class);
+//Route::get('pindex', PenerimaanController::class);
 
+Route::get('/pindex', [PenerimaanController::class, 'pindex']);
+Route::get('/tindex', [PenerimaanController::class, 'tindex']);
+
+// Route::get('/penerimaan/tidak-kode', [PenerimaanController::class, 'penerimaanTanpaKode'])->name('penerimaan.penerimaantanpakode');
+// Route::get('/penerimaan/tidak-TI', [PenerimaanController::class, 'penerimaanTI'])->name('penerimaan.penerimaanTI');
 // Route::get('/kelas', [KelasController::class, 'index'])->name('kelas.index');
 // Route::get('/kelas/create', [KelasController::class, 'create'])->name('kelas.create');
 // Route::post('/kelas/store', [KelasController::class, 'store'])->name('kelas.store');

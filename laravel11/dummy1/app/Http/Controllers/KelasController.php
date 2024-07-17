@@ -9,6 +9,7 @@ class KelasController extends Controller
 {
     public function index()
     {
+        //$kelas = Kelas::find(1);
         $kelas = Kelas::paginate(5);
         return view('kelas.index', compact('kelas'));
     }
